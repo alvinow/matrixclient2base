@@ -51,7 +51,7 @@ class AppConfigBase {
   static const String unsyncedRecordFieldname = "unsyncedRecord";
   static const String userNotificationFolderNodeId = "user_notification_folder";
   static const String spmFolderNodeId = "spm_kemdikbud";
-  static const String centerLogoMode=NodeListView.mlmDisabled;
+  static const String centerLogoMode="mlmDisabled";
   static const bool showAppLogoOnInitSplashScreen=true;
   static const bool showAppTitleOnInitSplashScreen=false;
   static const String tagLinkBaseModelFormDefinition =
