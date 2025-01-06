@@ -1,14 +1,11 @@
-import 'package:matrixclient/appconfig.dart';
-import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
-import 'package:matrixclient/modules/base/vwloginresponse/vwloginresponse.dart';
-import 'package:matrixclient/modules/vwclassencodedjsonstoreonhive/vwclassencodedjsonstoreonhive.dart';
-import 'package:matrixclient/modules/vwsharedpref/vwloginresponsesharedpref.dart';
+
+import 'package:matrixclient2base/appconfig.dart';
 import 'package:matrixclient2base/modules/base/vwloginresponse/vwloginresponse.dart';
 
 class VwAuthUtil {
 
   static String getClientUserLoggedInBoxName(){
-    String keyName= AppConfig.loggedInUser+"."+AppConfig.appTitle+"."+AppConfig.appVersion;
+    String keyName= AppConfigBase.loggedInUser+"."+AppConfigBase.appTitle+"."+AppConfigBase.appVersion;
 
     keyName=keyName.toLowerCase();
     return keyName;
