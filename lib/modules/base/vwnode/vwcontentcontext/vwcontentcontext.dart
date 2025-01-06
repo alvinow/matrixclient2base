@@ -1,4 +1,4 @@
-import 'package:matrixclient/modules/base/vwlinknode/vwlinknode.dart';
+import 'package:matrixclient2base/modules/base/vwlinknode/vwlinknode.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwcontentcontext.g.dart';
 

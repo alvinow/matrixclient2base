@@ -6,7 +6,7 @@ import 'package:matrixclient2base/modules/base/vwsharedpref/vwloginresponseshare
 class VwAuthUtil {
 
   static String getClientUserLoggedInBoxName(){
-    String keyName= AppConfigBase().getLoggedInUser()+"."+AppConfigBase().getAppTitle()+"."+AppConfigBase().getAppVersion();
+    String keyName= AppConfig.loggedInUser+"."+AppConfig.appTitle+"."+AppConfig.appVersion;
 
     keyName=keyName.toLowerCase();
     return keyName;

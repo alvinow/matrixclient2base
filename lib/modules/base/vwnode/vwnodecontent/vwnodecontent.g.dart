@@ -37,10 +37,7 @@ VwNodeContent _$VwNodeContentFromJson(Map<String, dynamic> json) =>
       fileStorage: json['fileStorage'] == null
           ? null
           : VwFileStorage.fromJson(json['fileStorage'] as Map<String, dynamic>),
-      formDefinition: json['formDefinition'] == null
-          ? null
-          : VwFormDefinition.fromJson(
-              json['formDefinition'] as Map<String, dynamic>),
+
       tag: json['tag'] as String?,
     );
 
@@ -55,6 +52,5 @@ Map<String, dynamic> _$VwNodeContentToJson(VwNodeContent instance) =>
       'renderedDate': instance.renderedDate?.toIso8601String(),
       'contentContext': instance.contentContext,
       'rowData': instance.rowData,
-      'formDefinition': instance.formDefinition,
       'tag': instance.tag,
     };

@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwfilestorage/modules/vwimagefileinfo/vwimagefileinfo.dart';
+import 'package:matrixclient2base/modules/base/vwfilestorage/modules/vwimagefileinfo/vwimagefileinfo.dart';
 part 'vwfileinfo.g.dart';
 
 @JsonSerializable()

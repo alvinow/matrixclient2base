@@ -96,10 +96,6 @@ VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) => VwFieldValue(
       valueFieldValueList: (json['valueFieldValueList'] as List<dynamic>?)
           ?.map((e) => VwFieldValue.fromJson(e as Map<String, dynamic>))
           .toList(),
-      valueFormDefinition: json['valueFormDefinition'] == null
-          ? null
-          : VwLinkFormDefinition.fromJson(
-              json['valueFormDefinition'] as Map<String, dynamic>),
       valueLinkNode: json['valueLinkNode'] == null
           ? null
           : VwLinkNode.fromJson(json['valueLinkNode'] as Map<String, dynamic>),
@@ -134,7 +130,6 @@ Map<String, dynamic> _$VwFieldValueToJson(VwFieldValue instance) =>
       'valueRowDataList': instance.valueRowDataList,
       'valueStringList': instance.valueStringList,
       'valueFieldValueList': instance.valueFieldValueList,
-      'valueFormDefinition': instance.valueFormDefinition,
       'valueLinkNode': instance.valueLinkNode,
       'valueLinkNodeList': instance.valueLinkNodeList,
       'valueNodeList': instance.valueNodeList,

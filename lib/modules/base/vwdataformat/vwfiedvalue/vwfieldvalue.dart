@@ -5,8 +5,6 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:matrixclient2base/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
 import 'package:matrixclient2base/modules/base/vwdataformat/vwfieldfilestorage/vwfieldfilestorage.dart';
 import 'package:matrixclient2base/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
-import 'package:matrixclient2base/modules/base/vwform/vwformdefinition/vwformdefinition.dart';
-import 'package:matrixclient2base/modules/base/vwlinkformdefinition/vwlinkformdefinition.dart';
 import 'package:matrixclient2base/modules/base/vwlinknode/vwlinknode.dart';
 import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
 part 'vwfieldvalue.g.dart';
@@ -29,7 +27,6 @@ class VwFieldValue {
         this.valueRowDataList,
         this.valueStringList,
         this.valueFieldValueList,
-        this.valueFormDefinition,
         this.valueLinkNode,
         this.valueLinkNodeList,
         this.valueNodeList,
@@ -89,7 +86,6 @@ class VwFieldValue {
   List<VwRowData>? valueRowDataList;
   List<String>? valueStringList;
   List<VwFieldValue>? valueFieldValueList;
-  VwLinkFormDefinition? valueFormDefinition;
   VwLinkNode ? valueLinkNode;
   List<VwLinkNode>? valueLinkNodeList;
   List<VwNode>? valueNodeList;
@@ -145,7 +141,6 @@ class VwFieldValue {
     this.valueDateTime=source.valueDateTime;
     this.valueFieldFileStorage=source.valueFieldFileStorage;
     this.valueFieldValueList=source.valueFieldValueList;
-    this.valueFormDefinition=source.valueFormDefinition;
     this.valueFormResponse=source.valueFormResponse;
     this.valueLinkNode=source.valueLinkNode;
     this.valueLinkNodeList=source.valueLinkNodeList;

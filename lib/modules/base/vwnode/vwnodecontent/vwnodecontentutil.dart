@@ -1,4 +1,4 @@
-import 'package:matrixclient/modules/base/vwnode/vwnodecontent/vwnodecontent.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnodecontent/vwnodecontent.dart';
 
 class VwNodeContentUtil {
   static VwNodeContent? getAttachmentByTag(

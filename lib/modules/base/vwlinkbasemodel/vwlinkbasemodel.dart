@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
+import 'package:matrixclient2base/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
 part 'vwlinkbasemodel.g.dart';
 
 @JsonSerializable()

@@ -1,4 +1,4 @@
-import 'package:matrixclient/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwlinkrowcollection.g.dart';
 

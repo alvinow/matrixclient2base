@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwnode/vwlinkfileurl/vwlinkfileurl.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwlinkfileurl/vwlinkfileurl.dart';
 import 'package:hive/hive.dart';
 part 'vwlinkfilenode.g.dart';
 

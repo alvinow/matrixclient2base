@@ -1,9 +1,9 @@
-import 'package:matrixclient/modules/base/vwnode/vwnode.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnodeaccess/vwnodeaccess.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnodeuseraccess/vwnodeuseraccess.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnodeusergroupaccess/vwnodeusergroupaccess.dart';
-import 'package:matrixclient/modules/base/vwuser/vwuser.dart';
-import 'package:matrixclient/modules/base/vwusergroup/vwusergroup.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnodeaccess/vwnodeaccess.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnodeuseraccess/vwnodeuseraccess.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnodeusergroupaccess/vwnodeusergroupaccess.dart';
+import 'package:matrixclient2base/modules/base/vwuser/vwuser.dart';
+import 'package:matrixclient2base/modules/base/vwusergroup/vwusergroup.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwnodeaccessrendered.g.dart';
 

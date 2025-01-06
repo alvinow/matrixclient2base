@@ -14,7 +14,7 @@ part 'vwfielddisplayformat.g.dart';
 @JsonSerializable()
 class VwFieldDisplayFormat {
   const VwFieldDisplayFormat(
-      {this.locale = AppConfigBase().getLocale(),
+      {this.locale = AppConfig.locale,
       this.fieldFormat = VwFieldDisplayFormat.vsfUnformatted,
       this.useCustomDateFormat = false,
       this.customDateFormat,

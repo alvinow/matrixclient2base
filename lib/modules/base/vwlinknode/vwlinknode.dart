@@ -1,9 +1,9 @@
-import 'package:matrixclient/modules/base/vwlinknode/modules/vwlinknoderendered/vwlinknoderendered.dart';
-import 'package:matrixclient/modules/base/vwnode/vwcontentcontext/vwcontentcontext.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnode.dart';
+import 'package:matrixclient2base/modules/base/vwlinknode/modules/vwlinknoderendered/vwlinknoderendered.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwcontentcontext/vwcontentcontext.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
 import 'dart:convert';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwquerynoderesult/vwquerynoderesult.dart';
+import 'package:matrixclient2base/modules/base/vwquerynoderesult/vwquerynoderesult.dart';
 part 'vwlinknode.g.dart';
 
 @JsonSerializable()

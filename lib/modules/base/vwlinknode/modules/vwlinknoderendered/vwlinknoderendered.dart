@@ -1,7 +1,4 @@
-import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnode.dart';
-import 'package:matrixclient/modules/vwform/vwformdefinition/vwformdefinition.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwlinknoderendered.g.dart';
 
