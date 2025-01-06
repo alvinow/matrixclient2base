@@ -1,5 +1,5 @@
 
-import 'package:matrixclient/modules/base/vwdataformat/vwfielddefinition/vwfielddefinition.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwfielddefinition/vwfielddefinition.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwrowdefinition.g.dart';
 

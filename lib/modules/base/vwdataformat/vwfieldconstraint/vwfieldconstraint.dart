@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwregexvalidation/vwregexvalidation.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwregexvalidation/vwregexvalidation.dart';
 part 'vwfieldconstraint.g.dart';
 
 @JsonSerializable()

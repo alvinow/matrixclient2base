@@ -39,6 +39,7 @@ dependencies:
   flutter_bloc: ^8.1.4
   equatable:
   go_router: ^14.2.0
+  hive_flutter:
 
 dev_dependencies:
   flutter_test:

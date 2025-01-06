@@ -1,14 +1,14 @@
 import 'dart:convert';
 
 import 'package:hive/hive.dart';
-import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwfieldfilestorage/vwfieldfilestorage.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
-import 'package:matrixclient/modules/base/vwlinknode/vwlinknode.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnode.dart';
-
-import 'package:matrixclient/modules/vwform/vwformdefinition/vwformdefinition.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:matrixclient2base/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwfieldfilestorage/vwfieldfilestorage.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
+import 'package:matrixclient2base/modules/base/vwform/vwformdefinition/vwformdefinition.dart';
+import 'package:matrixclient2base/modules/base/vwlinkformdefinition/vwlinkformdefinition.dart';
+import 'package:matrixclient2base/modules/base/vwlinknode/vwlinknode.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
 part 'vwfieldvalue.g.dart';
 
 @HiveType(typeId: 51)
@@ -89,7 +89,7 @@ class VwFieldValue {
   List<VwRowData>? valueRowDataList;
   List<String>? valueStringList;
   List<VwFieldValue>? valueFieldValueList;
-  VwFormDefinition? valueFormDefinition;
+  VwLinkFormDefinition? valueFormDefinition;
   VwLinkNode ? valueLinkNode;
   List<VwLinkNode>? valueLinkNodeList;
   List<VwNode>? valueNodeList;

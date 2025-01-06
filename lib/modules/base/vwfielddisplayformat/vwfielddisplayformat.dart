@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/painting.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/appconfig.dart';
-import 'package:matrixclient/modules/base/vwnumbertextinputformatter/vwnumbertextinputformatter.dart';
+import 'package:matrixclient2base/appconfig.dart';
+import 'package:matrixclient2base/modules/base/vwnumbertextinputformatter/vwnumbertextinputformatter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -14,7 +14,7 @@ part 'vwfielddisplayformat.g.dart';
 @JsonSerializable()
 class VwFieldDisplayFormat {
   const VwFieldDisplayFormat(
-      {this.locale = AppConfig.locale,
+      {this.locale = AppConfigBase().getLocale(),
       this.fieldFormat = VwFieldDisplayFormat.vsfUnformatted,
       this.useCustomDateFormat = false,
       this.customDateFormat,

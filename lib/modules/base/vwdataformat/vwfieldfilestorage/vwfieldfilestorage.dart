@@ -1,4 +1,4 @@
-import 'package:matrixclient/modules/base/vwfilestorage/vwfilestorage.dart';
+import 'package:matrixclient2base/modules/base/vwfilestorage/vwfilestorage.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwfieldfilestorage.g.dart';
 

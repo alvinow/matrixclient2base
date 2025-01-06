@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:hive/hive.dart';
-import 'package:matrixclient/modules/base/vwfilestorage/vwfilestorage.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnode.dart';
+import 'package:matrixclient2base/modules/base/vwfilestorage/vwfilestorage.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
 part 'vwclassencodedjson.g.dart';
 
 @HiveType(typeId: 12)

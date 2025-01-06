@@ -98,7 +98,7 @@ VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) => VwFieldValue(
           .toList(),
       valueFormDefinition: json['valueFormDefinition'] == null
           ? null
-          : VwFormDefinition.fromJson(
+          : VwLinkFormDefinition.fromJson(
               json['valueFormDefinition'] as Map<String, dynamic>),
       valueLinkNode: json['valueLinkNode'] == null
           ? null
