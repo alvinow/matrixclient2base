@@ -77,7 +77,7 @@ class VwFieldValue {
   bool? valueBoolean;
 
   @HiveField(6)
-  dynamic? value;
+  dynamic value;
 
   VwClassEncodedJson? valueClassEncodedJson;
   VwFieldFileStorage? valueFieldFileStorage;

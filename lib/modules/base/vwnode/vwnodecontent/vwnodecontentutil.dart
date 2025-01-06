@@ -5,7 +5,7 @@ class VwNodeContentUtil {
       {required String tag, required List<VwNodeContent> attachments}) {
     VwNodeContent? returnValue;
     try {
-      if (attachments != null)
+
         for (int la = 0; la < attachments.length; la++) {
           VwNodeContent currentNodeContent = attachments.elementAt(la);
 

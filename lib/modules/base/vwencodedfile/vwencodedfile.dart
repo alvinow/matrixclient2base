@@ -5,10 +5,8 @@ import 'package:matrixclient2base/modules/base/vwfilestorage/modules/vwfileencry
 import 'package:matrixclient2base/modules/base/vwfilestorage/modules/vwfileinfo/vwfileinfo.dart';
 import 'package:matrixclient2base/modules/base/vwfilestorage/modules/vwfilesource/vwfilesource.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient2base/modules/base/vwlinkbasemodel/vwlinkbasemodel.dart';
 import 'package:matrixclient2base/modules/base/vwlinknode/vwlinknode.dart';
 import 'package:matrixclient2base/modules/base/vwnode/vwnodecontent/vwnodecontent.dart';
-import 'package:json_annotation/json_annotation.dart';
 part 'vwencodedfile.g.dart';
 
 @JsonSerializable()

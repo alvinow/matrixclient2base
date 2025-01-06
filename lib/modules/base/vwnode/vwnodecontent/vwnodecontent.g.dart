@@ -37,7 +37,6 @@ VwNodeContent _$VwNodeContentFromJson(Map<String, dynamic> json) =>
       fileStorage: json['fileStorage'] == null
           ? null
           : VwFileStorage.fromJson(json['fileStorage'] as Map<String, dynamic>),
-
       tag: json['tag'] as String?,
     );
 

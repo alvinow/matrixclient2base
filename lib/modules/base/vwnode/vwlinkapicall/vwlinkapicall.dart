@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:hive/hive.dart';
-import 'package:json_annotation/json_annotation.dart';
 part 'vwlinkapicall.g.dart';
 
 @HiveType(typeId: 15)

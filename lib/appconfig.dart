@@ -33,14 +33,11 @@ class AppConfig {
   static const String loggedInUser = "VwLoginResponse.loggedInUser";
   static const String filedocumentUrl = '$baseUrl/filedocument';
   static const String appId="edokumen";
-  //static const String appId="projecta";
 
-  //static const String appTitle = "e-dokumen 2023";
   static const String appTitle = "SIM Tindak Lanjut Audit 2024";
   static const String copyrightText="Copyright @2024 "+appTitle+". All Right Reserved";
 
   static const String instagramUrl="";
-  //static const String youtubeUrl="https://www.youtube.com/@DitjenPAUDDikdasmen";
   static const String youtubeUrl="";
   static const String twitterUrl="";
   static const String facebookUrl="";

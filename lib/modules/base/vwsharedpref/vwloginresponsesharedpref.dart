@@ -1,4 +1,4 @@
-import 'package:matrixclient/modules/base/vwloginresponse/vwloginresponse.dart';
+import 'package:matrixclient2base/modules/base/vwloginresponse/vwloginresponse.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 

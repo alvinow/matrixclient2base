@@ -1,7 +1,7 @@
-import 'package:matrixclient/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
-import 'package:matrixclient/modules/base/vwuser/vwuser.dart';
-import 'package:matrixclient/modules/base/vwusergroup/vwusergroup.dart';
-import 'package:matrixclient/modules/base/vwusergroupmember/vwusergroupmember.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
+import 'package:matrixclient2base/modules/base/vwuser/vwuser.dart';
+import 'package:matrixclient2base/modules/base/vwusergroup/vwusergroup.dart';
+import 'package:matrixclient2base/modules/base/vwusergroupmember/vwusergroupmember.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'vwuserinfo.g.dart';
 
