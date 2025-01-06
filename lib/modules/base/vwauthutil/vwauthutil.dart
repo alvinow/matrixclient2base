@@ -3,6 +3,7 @@ import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.
 import 'package:matrixclient/modules/base/vwloginresponse/vwloginresponse.dart';
 import 'package:matrixclient/modules/vwclassencodedjsonstoreonhive/vwclassencodedjsonstoreonhive.dart';
 import 'package:matrixclient/modules/vwsharedpref/vwloginresponsesharedpref.dart';
+import 'package:matrixclient2base/modules/base/vwloginresponse/vwloginresponse.dart';
 
 class VwAuthUtil {
 

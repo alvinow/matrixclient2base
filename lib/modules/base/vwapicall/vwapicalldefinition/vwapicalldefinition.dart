@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwrowdefinition/vwrowdefinition.dart';
+import 'package:matrixclient2base/modules/base/vwdataformat/vwrowdefinition/vwrowdefinition.dart';
 part 'vwapicalldefinition.g.dart';
 
 @JsonSerializable()

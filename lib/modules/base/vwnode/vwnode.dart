@@ -1,13 +1,8 @@
-import 'package:matrixclient/modules/base/vwbasemodel/vwbasemodel.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwdataformattimestamp/vwdataformattimestamp.dart';
-import 'package:matrixclient/modules/base/vwdataformat/vwrowdata/vwrowdata.dart';
-import 'package:matrixclient/modules/base/vwlinkformdefinition/vwlinkformdefinition.dart';
-import 'package:matrixclient/modules/base/vwlinknode/vwlinknode.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnodeaccessrendered/vwnodeaccessrendered.dart';
-import 'package:matrixclient/modules/base/vwnode/vwnodecontent/vwnodecontent.dart';
-import 'package:json_annotation/json_annotation.dart';
-import 'package:matrixclient/modules/base/vwnoderesponse/vwnoderesponse.dart';
-import 'package:matrixclient/modules/vwform/vwformdefinition/vwformdefinition.dart';
+
+import 'package:matrixclient2base/modules/base/vwbasemodel/vwbasemodel.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnodeaccessrendered/vwnodeaccessrendered.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnodecontent/vwnodecontent.dart';
+import 'package:matrixclient2base/modules/base/vwnoderesponse/vwnoderesponse.dart';
 part 'vwnode.g.dart';
 
 @JsonSerializable()
