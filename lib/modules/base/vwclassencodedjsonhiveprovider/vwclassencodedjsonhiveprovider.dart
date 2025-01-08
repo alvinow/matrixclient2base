@@ -1,6 +1,7 @@
 import 'package:hive_flutter/adapters.dart';
-import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
 import 'dart:convert';
+
+import 'package:matrixclient2base/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
 
 
 

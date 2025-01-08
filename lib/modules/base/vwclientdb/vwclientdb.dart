@@ -1,5 +1,4 @@
-import 'package:matrixclient/modules/base/vwloginresponse/vwloginresponse.dart';
-import 'package:matrixclient/modules/base/vwloginsession/vwloginsession.dart';
+import 'package:matrixclient2base/modules/base/vwloginresponse/vwloginresponse.dart';
 import 'package:sembast/sembast.dart';
 import 'package:sembast/sembast_io.dart';
 import 'dart:convert';

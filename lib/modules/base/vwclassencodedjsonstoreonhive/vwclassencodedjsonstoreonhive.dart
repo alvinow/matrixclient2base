@@ -1,6 +1,7 @@
-import 'package:matrixclient/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
-import 'package:matrixclient/modules/vwclassencodedjsonhiveprovider/vwclassencodedjsonhiveprovider.dart';
+import 'package:matrixclient2base/modules/base/vwclassencodedjson/vwclassencodedjson.dart';
 import 'dart:convert';
+
+import 'package:matrixclient2base/modules/base/vwclassencodedjsonhiveprovider/vwclassencodedjsonhiveprovider.dart';
 
 class VwClassEncodedJsonStoreOnHive{
   static Future<int> syncContentToBox(VwClassEncodedJson node) async {
