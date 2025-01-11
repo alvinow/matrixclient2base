@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:hive/hive.dart';
-//import 'package:matrixclient2base/modules/base/vwfilestorage/vwfilestorage.dart';
-//import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
+import 'package:matrixclient2base/modules/base/vwfilestorage/vwfilestorage.dart';
+import 'package:matrixclient2base/modules/base/vwnode/vwnode.dart';
 part 'vwclassencodedjson.g.dart';
 
 @HiveType(typeId: 12)
@@ -16,11 +16,11 @@ class VwClassEncodedJson{
     this.compressionType,
 
     this.collectionName,
-  this.createdOnClient,
+    this.createdOnClient,
     this.syncedToServer,
     this.pushToServerStatus,
-    //this.uploadFileStorageList,
-    //this.uploadNodeResponse,
+    this.uploadFileStorageList,
+    this.uploadNodeResponse,
     this.syncUseRowDataFormat=false
   });
 
@@ -56,9 +56,9 @@ class VwClassEncodedJson{
   @HiveField(9)
   String? compressionType;
 
- // List<VwFileStorage>? uploadFileStorageList;
+  List<VwFileStorage>? uploadFileStorageList;
 
- // List<VwNode>? uploadNodeResponse;
+  List<VwNode>? uploadNodeResponse;
 
   bool? syncUseRowDataFormat;
 
