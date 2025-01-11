@@ -87,6 +87,12 @@ VwClassEncodedJson _$VwClassEncodedJsonFromJson(Map<String, dynamic> json) =>
           ? null
           : DateTime.parse(json['syncedToServer'] as String),
       pushToServerStatus: (json['pushToServerStatus'] as num?)?.toInt(),
+      uploadFileStorageList: (json['uploadFileStorageList'] as List<dynamic>?)
+          ?.map((e) => VwFileStorage.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      uploadNodeResponse: (json['uploadNodeResponse'] as List<dynamic>?)
+          ?.map((e) => VwNode.fromJson(e as Map<String, dynamic>))
+          .toList(),
       syncUseRowDataFormat: json['syncUseRowDataFormat'] as bool? ?? false,
     );
 
@@ -102,5 +108,7 @@ Map<String, dynamic> _$VwClassEncodedJsonToJson(VwClassEncodedJson instance) =>
       'dataCompressedBase64': instance.dataCompressedBase64,
       'isCompressed': instance.isCompressed,
       'compressionType': instance.compressionType,
+      'uploadFileStorageList': instance.uploadFileStorageList,
+      'uploadNodeResponse': instance.uploadNodeResponse,
       'syncUseRowDataFormat': instance.syncUseRowDataFormat,
     };
