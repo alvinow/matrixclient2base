@@ -14,7 +14,6 @@ class VwClassEncodedJson{
     this.isCompressed=false,
     this.dataCompressedBase64,
     this.compressionType,
-
     this.collectionName,
     this.createdOnClient,
     this.syncedToServer,
