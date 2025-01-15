@@ -9,7 +9,7 @@ part of 'vwfielddisplayformat.dart';
 VwFieldDisplayFormat _$VwFieldDisplayFormatFromJson(
         Map<String, dynamic> json) =>
     VwFieldDisplayFormat(
-      locale: json['locale'] as String? ?? AppConfig.locale,
+      locale: json['locale'] as String,
       fieldFormat:
           json['fieldFormat'] as String? ?? VwFieldDisplayFormat.vsfUnformatted,
       useCustomDateFormat: json['useCustomDateFormat'] as bool? ?? false,

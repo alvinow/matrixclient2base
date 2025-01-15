@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
 
-
+/*
 class AppConfig {
   static const String appVersion = "2.30.7";
 
@@ -10,8 +9,8 @@ class AppConfig {
 
   //static const String baseUrl= "https://api.bagkeu.dikdasmen.kemdikbud.go.id/";
   //static const String baseUrl = "https://tlhp.bdg1.net/tinjut";
-  static const String baseUrl = "http://localhost:4101";
-  //static const String baseUrl = "https://appkeubmnpdm.kemdikbud.go.id/tinjut";
+  //static const String baseUrl = "http://localhost:4101";
+  static const String baseUrl = "https://appkeubmnpdm.kemdikbud.go.id/tinjut";
 
 
   static const bool showStartSplashScreen=false;
@@ -92,5 +91,5 @@ class AppConfig {
 
 
 }
-
+*/
 
