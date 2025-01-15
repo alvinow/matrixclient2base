@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 class BaseGeneralConfig{
   BaseGeneralConfig(
   ){
+    this.locale="ID_id";
     this.appId="matrixclient";
     this.appTitle="Matrix Client";
     this.appVersion="1.0.0";
@@ -20,6 +21,7 @@ class BaseGeneralConfig{
     this.showStartSplashScreen=false;
   }
 
+  late String locale;
   late String appId;
   late String appTitle;
   late String appVersion;
