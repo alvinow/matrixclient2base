@@ -1,4 +1,59 @@
 
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+
+class BaseGeneralConfig{
+  BaseGeneralConfig(
+  ){
+    this.appId="matrixclient";
+    this.appTitle="Matrix Client";
+    this.appVersion="1.0.0";
+    this.mainLogoPath="assets/image/anies_imin_mainlogo.png";
+    this.baseUrl="http://localhost:4101";
+    this.graphqlServerAddress="$baseUrl/graphql";
+    this.formDefinitionFolderNodeId="206868a4-0d60-4140-b9a2-252bb1ffb7f5";
+    this.invalidUserId="<invalid_user_id>";
+    this.unsyncedRecordFieldname="unsyncedRecord";
+    this.loggedInUser="VwLoginResponse.loggedInUser";
+    this.loginSessionGuestUserId="01bf4751-07d4-48ec-bee2-80a8752e31de";
+    this.showStartSplashScreen=false;
+  }
+
+  late String appId;
+  late String appTitle;
+  late String appVersion;
+  late String mainLogoPath;
+  late String baseUrl;
+  late String graphqlServerAddress;
+  late String formDefinitionFolderNodeId;
+  late String invalidUserId;
+  late String unsyncedRecordFieldname;
+  late String loggedInUser;
+  late String loginSessionGuestUserId;
+  late bool showStartSplashScreen;
+
+}
+
+class BaseThemeConfig {
+  BaseThemeConfig(){
+    this.textColor=Colors.white;
+    this.primaryColor=Color.fromARGB(255,37, 42, 103);
+  }
+  late Color textColor;
+  late Color primaryColor;
+}
+
+class BaseAppConfig{
+ BaseAppConfig(){
+   this.generalConfig=BaseGeneralConfig();
+   this.baseThemeConfig=BaseThemeConfig();
+ }
+  late BaseGeneralConfig generalConfig;
+  late BaseThemeConfig baseThemeConfig;
+
+}
+
 /*
 class AppConfig {
   static const String appVersion = "2.30.7";
