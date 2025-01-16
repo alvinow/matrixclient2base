@@ -4,68 +4,68 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class BaseGeneralConfig{
-  BaseGeneralConfig(
-  ){
-    this.locale="ID_id";
-    this.appId="matrixclient";
-    this.appTitle="Matrix Client";
-    this.appVersion="1.0.0";
-    this.mainLogoPath="assets/image/anies_imin_mainlogo.png";
-    this.baseUrl="http://localhost:4101";
-    this.graphqlServerAddress="$baseUrl/graphql";
-    this.formDefinitionFolderNodeId="206868a4-0d60-4140-b9a2-252bb1ffb7f5";
-    this.invalidUserId="<invalid_user_id>";
-    this.unsyncedRecordFieldname="unsyncedRecord";
-    this.loggedInUser="VwLoginResponse.loggedInUser";
-    this.loginSessionGuestUserId="01bf4751-07d4-48ec-bee2-80a8752e31de";
-    this.showStartSplashScreen=false;
-    this.specifiedFormSubmit="specifiedFormSubmit";
-    this.filesUrlPath="/files";
-    this.vwFormDefinition= "VwFormDefinition";
-    this.guestUserId="eac4252d-a848-4db1-9693-01bce74a91ae";
-    this.appAdminUserMainRole="appAdmin";
-    this.rootMainRole="root";
-    this.adminticketMainRoleUserGroupId="adminticket";
-    this.rootFolderNodeId="rootfolder";
-    this.tagLinkBaseModelFormDefinition="linkBaseModelFormDefinition";
-    this.operatorticketUserGroupId="operatorticket";
-    this.appUserMainRole="appUser";
-    this.entryDatAdminUserGroupId="entrydataadmin";
-    this.entryDataOperatorUserGroupId="entrydataoperator";
-    this.cableExtractionChartNodeId="84987631-2ed0-4f9b-a2d7-2d4c2ef052f6";
-    this.userQuoraMainRole="userquora";
-    this.adminPauddikdasmenSpiUserGroupRecordId="669080e4-227f-41bc-938b-45ea313744bd";
-  }
+  const BaseGeneralConfig(
+  {
+    this.locale="ID_id",
+    this.appId="matrixclient",
+    this.appTitle="Matrix Client",
+    this.appVersion="1.0.0",
+    this.mainLogoPath="assets/image/anies_imin_mainlogo.png",
+    this.baseUrl="http://localhost:4101",
+    this.graphqlServerAddress="http://localhost:4101/graphql",
+    this.formDefinitionFolderNodeId="206868a4-0d60-4140-b9a2-252bb1ffb7f5",
+    this.invalidUserId="<invalid_user_id>",
+    this.unsyncedRecordFieldname="unsyncedRecord",
+    this.loggedInUser="VwLoginResponse.loggedInUser",
+    this.loginSessionGuestUserId="01bf4751-07d4-48ec-bee2-80a8752e31de",
+    this.showStartSplashScreen=false,
+    this.specifiedFormSubmit="specifiedFormSubmit",
+    this.filesUrlPath="/files",
+    this.vwFormDefinition= "VwFormDefinition",
+    this.guestUserId="eac4252d-a848-4db1-9693-01bce74a91ae",
+    this.appAdminUserMainRole="appAdmin",
+    this.rootMainRole="root",
+    this.adminticketMainRoleUserGroupId="adminticket",
+    this.rootFolderNodeId="rootfolder",
+    this.tagLinkBaseModelFormDefinition="linkBaseModelFormDefinition",
+    this.operatorticketUserGroupId="operatorticket",
+    this.appUserMainRole="appUser",
+    this.entryDatAdminUserGroupId="entrydataadmin",
+    this.entryDataOperatorUserGroupId="entrydataoperator",
+    this.cableExtractionChartNodeId="84987631-2ed0-4f9b-a2d7-2d4c2ef052f6",
+    this.userQuoraMainRole="userquora",
+    this.adminPauddikdasmenSpiUserGroupRecordId="669080e4-227f-41bc-938b-45ea313744bd",
+  });
 
-  late String locale;
-  late String appId;
-  late String appTitle;
-  late String appVersion;
-  late String mainLogoPath;
-  late String baseUrl;
-  late String graphqlServerAddress;
-  late String formDefinitionFolderNodeId;
-  late String invalidUserId;
-  late String unsyncedRecordFieldname;
-  late String loggedInUser;
-  late String loginSessionGuestUserId;
-  late bool showStartSplashScreen;
-  late String specifiedFormSubmit;
-  late String filesUrlPath;
-  late String vwFormDefinition;
-  late String guestUserId;
-  late String appAdminUserMainRole;
-  late String rootMainRole;
-  late String adminticketMainRoleUserGroupId;
-  late String rootFolderNodeId;
-  late String tagLinkBaseModelFormDefinition;
-  late String operatorticketUserGroupId;
-  late String appUserMainRole;
-  late String entryDatAdminUserGroupId;
-  late String entryDataOperatorUserGroupId;
-  late String cableExtractionChartNodeId;
-  late String userQuoraMainRole;
-  late String adminPauddikdasmenSpiUserGroupRecordId;
+  final String locale;
+  final String appId;
+  final String appTitle;
+  final String appVersion;
+  final String mainLogoPath;
+  final String baseUrl;
+  final String graphqlServerAddress;
+  final String formDefinitionFolderNodeId;
+  final String invalidUserId;
+  final String unsyncedRecordFieldname;
+  final String loggedInUser;
+  final String loginSessionGuestUserId;
+  final bool showStartSplashScreen;
+  final String specifiedFormSubmit;
+  final String filesUrlPath;
+  final String vwFormDefinition;
+  final String guestUserId;
+  final String appAdminUserMainRole;
+  final String rootMainRole;
+  final String adminticketMainRoleUserGroupId;
+  final String rootFolderNodeId;
+  final String tagLinkBaseModelFormDefinition;
+  final String operatorticketUserGroupId;
+  final String appUserMainRole;
+  final String entryDatAdminUserGroupId;
+  final String entryDataOperatorUserGroupId;
+  final String cableExtractionChartNodeId;
+  final String userQuoraMainRole;
+  final String adminPauddikdasmenSpiUserGroupRecordId;
 
 
 }
