@@ -34,6 +34,7 @@ class BaseGeneralConfig{
     this.entryDataOperatorUserGroupId="entrydataoperator";
     this.cableExtractionChartNodeId="84987631-2ed0-4f9b-a2d7-2d4c2ef052f6";
     this.userQuoraMainRole="userquora";
+    this.adminPauddikdasmenSpiUserGroupRecordId="669080e4-227f-41bc-938b-45ea313744bd";
   }
 
   late String locale;
@@ -64,6 +65,7 @@ class BaseGeneralConfig{
   late String entryDataOperatorUserGroupId;
   late String cableExtractionChartNodeId;
   late String userQuoraMainRole;
+  late String adminPauddikdasmenSpiUserGroupRecordId;
 
 
 }
