@@ -21,8 +21,6 @@ class BaseGeneralConfig{
     this.showStartSplashScreen=false;
     this.specifiedFormSubmit="specifiedFormSubmit";
     this.filesUrlPath="/files";
-    this.rootLogoPath="assets/image/projectamin/project_amin_logo_white.png";;
-    this.centerLogoMode="mlmDisabled";
     this.vwFormDefinition= "VwFormDefinition";
     this.guestUserId="eac4252d-a848-4db1-9693-01bce74a91ae";
     this.appAdminUserMainRole="appAdmin";
@@ -47,8 +45,8 @@ class BaseGeneralConfig{
   late bool showStartSplashScreen;
   late String specifiedFormSubmit;
   late String filesUrlPath;
-  late String rootLogoPath;
-  late String centerLogoMode;
+
+
   late String vwFormDefinition;
   late String guestUserId;
   late String appAdminUserMainRole;
@@ -66,11 +64,15 @@ class BaseThemeConfig {
     this.primaryColor=Color.fromARGB(255,37, 42, 103);
     this.showAppTitleOnInitSplashScreen=true;
     this.showAppLogoOnInitSplashScreen=true;
+    this.rootLogoPath="assets/image/projectamin/project_amin_logo_white.png";
+    this.centerLogoMode="mlmDisabled";
   }
   late Color textColor;
   late Color primaryColor;
   late bool showAppLogoOnInitSplashScreen;
   late bool showAppTitleOnInitSplashScreen;
+  late String rootLogoPath;
+  late String centerLogoMode;
 }
 
 class BaseAppConfig{
