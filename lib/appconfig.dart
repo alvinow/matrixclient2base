@@ -111,11 +111,11 @@ class BaseAppConfig{
  const BaseAppConfig({
    this.generalConfig=const BaseGeneralConfig(),
    this.baseThemeConfig=const BaseThemeConfig(),
-   this.baseSocialMediaUrl=const BaseSocialMediaUrl()
+   this.socialMediaUrl=const BaseSocialMediaUrl()
 
  });
 
-  final BaseSocialMediaUrl baseSocialMediaUrl;
+  final BaseSocialMediaUrl socialMediaUrl;
   final BaseGeneralConfig generalConfig;
   final BaseThemeConfig baseThemeConfig;
 
