@@ -28,6 +28,12 @@ class BaseGeneralConfig{
     this.adminticketMainRoleUserGroupId="adminticket";
     this.rootFolderNodeId="rootfolder";
     this.tagLinkBaseModelFormDefinition="linkBaseModelFormDefinition";
+    this.operatorticketUserGroupId="operatorticket";
+    this.appUserMainRole="appUser";
+    this.entryDatAdminUserGroupId="entrydataadmin";
+    this.entryDataOperatorUserGroupId="entrydataoperator";
+    this.cableExtractionChartNodeId="84987631-2ed0-4f9b-a2d7-2d4c2ef052f6";
+    this.userQuoraMainRole="userquora";
   }
 
   late String locale;
@@ -45,8 +51,6 @@ class BaseGeneralConfig{
   late bool showStartSplashScreen;
   late String specifiedFormSubmit;
   late String filesUrlPath;
-
-
   late String vwFormDefinition;
   late String guestUserId;
   late String appAdminUserMainRole;
@@ -54,6 +58,12 @@ class BaseGeneralConfig{
   late String adminticketMainRoleUserGroupId;
   late String rootFolderNodeId;
   late String tagLinkBaseModelFormDefinition;
+  late String operatorticketUserGroupId;
+  late String appUserMainRole;
+  late String entryDatAdminUserGroupId;
+  late String entryDataOperatorUserGroupId;
+  late String cableExtractionChartNodeId;
+  late String userQuoraMainRole;
 
 
 }
