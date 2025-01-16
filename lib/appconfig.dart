@@ -88,7 +88,7 @@ class BaseThemeConfig {
 }
 
 class BaseAppConfig{
- BaseAppConfig({
+ const BaseAppConfig({
    this.generalConfig=const BaseGeneralConfig(),
    this.baseThemeConfig=const BaseThemeConfig()
  });
