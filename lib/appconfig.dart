@@ -70,6 +70,26 @@ class BaseGeneralConfig{
 
 }
 
+class BaseSocialMediaUrl{
+  const BaseSocialMediaUrl({
+   this.tiktok="https://tiktok.com",
+   this.instagram="https://instagram.com",
+   this.youtube="https://youtube.com",
+   this.facebook="https://facebook.com",
+   this.whatsapp="https://whatsapp.com",
+   this.linkedin="https://linkedin.com",
+   this.strava="https://strava.com"
+});
+
+  final String tiktok;
+  final String instagram;
+  final String youtube;
+  final String facebook;
+  final String whatsapp;
+  final String linkedin;
+  final String strava;
+}
+
 class BaseThemeConfig {
   const BaseThemeConfig({
     this.textColor=const Color.fromARGB(255,255,255,255),
@@ -90,10 +110,12 @@ class BaseThemeConfig {
 class BaseAppConfig{
  const BaseAppConfig({
    this.generalConfig=const BaseGeneralConfig(),
-   this.baseThemeConfig=const BaseThemeConfig()
+   this.baseThemeConfig=const BaseThemeConfig(),
+   this.baseSocialMediaUrl=const BaseSocialMediaUrl()
+
  });
 
-
+  final BaseSocialMediaUrl baseSocialMediaUrl;
   final BaseGeneralConfig generalConfig;
   final BaseThemeConfig baseThemeConfig;
 
