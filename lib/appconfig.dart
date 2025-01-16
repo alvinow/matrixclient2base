@@ -71,29 +71,31 @@ class BaseGeneralConfig{
 }
 
 class BaseThemeConfig {
-  BaseThemeConfig(){
-    this.textColor=Colors.white;
-    this.primaryColor=Color.fromARGB(255,37, 42, 103);
-    this.showAppTitleOnInitSplashScreen=true;
-    this.showAppLogoOnInitSplashScreen=true;
-    this.rootLogoPath="assets/image/projectamin/project_amin_logo_white.png";
-    this.centerLogoMode="mlmDisabled";
-  }
-  late Color textColor;
-  late Color primaryColor;
-  late bool showAppLogoOnInitSplashScreen;
-  late bool showAppTitleOnInitSplashScreen;
-  late String rootLogoPath;
-  late String centerLogoMode;
+  const BaseThemeConfig({
+    this.textColor=const Color.fromARGB(255,255,255,255),
+    this.primaryColor=const Color.fromARGB(255,37, 42, 103),
+    this.showAppTitleOnInitSplashScreen=true,
+    this.showAppLogoOnInitSplashScreen=true,
+    this.rootLogoPath="assets/image/projectamin/project_amin_logo_white.png",
+    this.centerLogoMode="mlmDisabled"
+  });
+  final Color textColor;
+  final Color primaryColor;
+  final bool showAppLogoOnInitSplashScreen;
+  final bool showAppTitleOnInitSplashScreen;
+  final String rootLogoPath;
+  final String centerLogoMode;
 }
 
 class BaseAppConfig{
- BaseAppConfig(){
-   this.generalConfig=BaseGeneralConfig();
-   this.baseThemeConfig=BaseThemeConfig();
- }
-  late BaseGeneralConfig generalConfig;
-  late BaseThemeConfig baseThemeConfig;
+ BaseAppConfig({
+   this.generalConfig=const BaseGeneralConfig(),
+   this.baseThemeConfig=const BaseThemeConfig()
+ });
+
+
+  final BaseGeneralConfig generalConfig;
+  final BaseThemeConfig baseThemeConfig;
 
 }
 
