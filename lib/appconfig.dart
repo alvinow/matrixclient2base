@@ -41,9 +41,13 @@ class BaseThemeConfig {
   BaseThemeConfig(){
     this.textColor=Colors.white;
     this.primaryColor=Color.fromARGB(255,37, 42, 103);
+    this.showAppTitleOnInitSplashScreen=true;
+    this.showAppLogoOnInitSplashScreen=true;
   }
   late Color textColor;
   late Color primaryColor;
+  late bool showAppLogoOnInitSplashScreen;
+  late bool showAppTitleOnInitSplashScreen;
 }
 
 class BaseAppConfig{
