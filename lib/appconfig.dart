@@ -19,6 +19,17 @@ class BaseGeneralConfig{
     this.loggedInUser="VwLoginResponse.loggedInUser";
     this.loginSessionGuestUserId="01bf4751-07d4-48ec-bee2-80a8752e31de";
     this.showStartSplashScreen=false;
+    this.specifiedFormSubmit="specifiedFormSubmit";
+    this.filesUrlPath="/files";
+    this.rootLogoPath="assets/image/projectamin/project_amin_logo_white.png";;
+    this.centerLogoMode="mlmDisabled";
+    this.vwFormDefinition= "VwFormDefinition";
+    this.guestUserId="eac4252d-a848-4db1-9693-01bce74a91ae";
+    this.appAdminUserMainRole="appAdmin";
+    this.rootMainRole="root";
+    this.adminticketMainRoleUserGroupId="adminticket";
+    this.rootFolderNodeId="rootfolder";
+    this.tagLinkBaseModelFormDefinition="linkBaseModelFormDefinition";
   }
 
   late String locale;
@@ -34,6 +45,18 @@ class BaseGeneralConfig{
   late String loggedInUser;
   late String loginSessionGuestUserId;
   late bool showStartSplashScreen;
+  late String specifiedFormSubmit;
+  late String filesUrlPath;
+  late String rootLogoPath;
+  late String centerLogoMode;
+  late String vwFormDefinition;
+  late String guestUserId;
+  late String appAdminUserMainRole;
+  late String rootMainRole;
+  late String adminticketMainRoleUserGroupId;
+  late String rootFolderNodeId;
+  late String tagLinkBaseModelFormDefinition;
+
 
 }
 
