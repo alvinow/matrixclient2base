@@ -10,7 +10,7 @@ class BaseGeneralConfig{
     this.appId="matrixclient",
     this.appTitle="Matrix Client",
     this.appVersion="1.0.0",
-    this.mainLogoPath="assets/image/anies_imin_mainlogo.png",
+    this.mainLogoPath="assets/logo/logo_kemdikbud.png",
     this.baseUrl="http://localhost:4101",
     this.graphqlServerAddress="http://localhost:4101/graphql",
     this.formDefinitionFolderNodeId="206868a4-0d60-4140-b9a2-252bb1ffb7f5",
@@ -98,7 +98,7 @@ class BaseThemeConfig {
     this.primaryColor=const Color.fromARGB(255,37, 42, 103),
     this.showAppTitleOnInitSplashScreen=true,
     this.showAppLogoOnInitSplashScreen=true,
-    this.rootLogoPath="assets/image/projectamin/project_amin_logo_white.png",
+    this.rootLogoPath="assets/logo/logo_kemdikbud.png",
     this.centerLogoMode="mlmDisabled"
   });
   final Color textColor;
