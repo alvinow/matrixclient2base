@@ -35,6 +35,7 @@ class BaseGeneralConfig{
     this.cableExtractionChartNodeId="84987631-2ed0-4f9b-a2d7-2d4c2ef052f6",
     this.userQuoraMainRole="userquora",
     this.adminPauddikdasmenSpiUserGroupRecordId="669080e4-227f-41bc-938b-45ea313744bd",
+    this.copyrightText="Copyright @2025. All Right Reserved"
   });
 
   final String locale;
@@ -66,6 +67,7 @@ class BaseGeneralConfig{
   final String cableExtractionChartNodeId;
   final String userQuoraMainRole;
   final String adminPauddikdasmenSpiUserGroupRecordId;
+  final String copyrightText;
 
 
 }
