@@ -120,7 +120,7 @@ VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) {
   }
   catch(error)
   {
-
+  print("Error catched on _VwFieldValueFromJson: "+error.toString());
   }
 
   return VwFieldValue(
