@@ -82,7 +82,7 @@ VwNode _$VwNodeFromJson(Map<String, dynamic> json) {
       }
       catch(error)
       {
-            print("Error catched on _VwNodeFromJson");
+            print("Error catched on _VwNodeFromJson:"+error.toString());
       }
 
       return VwNode(
