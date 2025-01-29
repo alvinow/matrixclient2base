@@ -69,7 +69,7 @@ VwRowData _$VwRowDataFromJson(Map<String, dynamic> json) {
 
       }
       catch(error) {
-            print("Error catched on _VwRowDataFromJson: "+error.toString())
+            print("Error catched on _VwRowDataFromJson: "+error.toString());
       }
 
 
@@ -156,4 +156,4 @@ VwRowData _$VwRowDataFromJson(Map<String, dynamic> json) {
             'parentNodeId': instance.parentNodeId,
             'indexFieldProperties': instance.indexFieldProperties,
       };
-}
+
