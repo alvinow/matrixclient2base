@@ -62,7 +62,11 @@ class VwFieldValueAdapter extends TypeAdapter<VwFieldValue> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) => VwFieldValue(
+VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) {
+
+  try
+  {
+    VwFieldValue(
       fieldName: json['fieldName'] as String,
       valueTypeId: json['valueTypeId'] as String? ?? VwFieldValue.vatString,
       valueString: json['valueString'] as String?,
@@ -75,18 +79,18 @@ VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) => VwFieldValue(
       valueFieldFileStorage: json['valueFieldFileStorage'] == null
           ? null
           : VwFieldFileStorage.fromJson(
-              json['valueFieldFileStorage'] as Map<String, dynamic>),
+          json['valueFieldFileStorage'] as Map<String, dynamic>),
       valueClassEncodedJson: json['valueClassEncodedJson'] == null
           ? null
           : VwClassEncodedJson.fromJson(
-              json['valueClassEncodedJson'] as Map<String, dynamic>),
+          json['valueClassEncodedJson'] as Map<String, dynamic>),
       valueRowData: json['valueRowData'] == null
           ? null
           : VwRowData.fromJson(json['valueRowData'] as Map<String, dynamic>),
       valueFormResponse: json['valueFormResponse'] == null
           ? null
           : VwRowData.fromJson(
-              json['valueFormResponse'] as Map<String, dynamic>),
+          json['valueFormResponse'] as Map<String, dynamic>),
       valueRowDataList: (json['valueRowDataList'] as List<dynamic>?)
           ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -109,10 +113,68 @@ VwFieldValue _$VwFieldValueFromJson(Map<String, dynamic> json) => VwFieldValue(
           ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
           .toList(),
       renderedFormResponseList:
-          (json['renderedFormResponseList'] as List<dynamic>?)
-              ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
-              .toList(),
+      (json['renderedFormResponseList'] as List<dynamic>?)
+          ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
+  }
+  catch(error)
+  {
+
+  }
+
+  return VwFieldValue(
+    fieldName: json['fieldName'] as String,
+    valueTypeId: json['valueTypeId'] as String? ?? VwFieldValue.vatString,
+    valueString: json['valueString'] as String?,
+    valueNumber: (json['valueNumber'] as num?)?.toDouble(),
+    valueDateTime: json['valueDateTime'] == null
+        ? null
+        : DateTime.parse(json['valueDateTime'] as String),
+    valueBoolean: json['valueBoolean'] as bool?,
+    value: json['value'],
+    valueFieldFileStorage: json['valueFieldFileStorage'] == null
+        ? null
+        : VwFieldFileStorage.fromJson(
+        json['valueFieldFileStorage'] as Map<String, dynamic>),
+    valueClassEncodedJson: json['valueClassEncodedJson'] == null
+        ? null
+        : VwClassEncodedJson.fromJson(
+        json['valueClassEncodedJson'] as Map<String, dynamic>),
+    valueRowData: json['valueRowData'] == null
+        ? null
+        : VwRowData.fromJson(json['valueRowData'] as Map<String, dynamic>),
+    valueFormResponse: json['valueFormResponse'] == null
+        ? null
+        : VwRowData.fromJson(
+        json['valueFormResponse'] as Map<String, dynamic>),
+    valueRowDataList: (json['valueRowDataList'] as List<dynamic>?)
+        ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    valueStringList: (json['valueStringList'] as List<dynamic>?)
+        ?.map((e) => e as String)
+        .toList(),
+    valueFieldValueList: (json['valueFieldValueList'] as List<dynamic>?)
+        ?.map((e) => VwFieldValue.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    valueLinkNode: json['valueLinkNode'] == null
+        ? null
+        : VwLinkNode.fromJson(json['valueLinkNode'] as Map<String, dynamic>),
+    valueLinkNodeList: (json['valueLinkNodeList'] as List<dynamic>?)
+        ?.map((e) => VwLinkNode.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    valueNodeList: (json['valueNodeList'] as List<dynamic>?)
+        ?.map((e) => VwNode.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    syncFormResponseList: (json['syncFormResponseList'] as List<dynamic>?)
+        ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    renderedFormResponseList:
+    (json['renderedFormResponseList'] as List<dynamic>?)
+        ?.map((e) => VwRowData.fromJson(e as Map<String, dynamic>))
+        .toList(),
+  );
+}
 
 Map<String, dynamic> _$VwFieldValueToJson(VwFieldValue instance) =>
     <String, dynamic>{
