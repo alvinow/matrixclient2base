@@ -10,7 +10,7 @@ VwNodeContent _$VwNodeContentFromJson(Map<String, dynamic> json) {
 
       try
       {
-            return VwNodeContent(
+             VwNodeContent(
                   classEncodedJson: json['classEncodedJson'] == null
                       ? null
                       : VwClassEncodedJson.fromJson(

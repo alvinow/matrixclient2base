@@ -9,7 +9,7 @@ part of 'vwrenderednodepackage.dart';
 VwRenderedNodePackage _$VwRenderedNodePackageFromJson(
         Map<String, dynamic> json) {
 try {
-  return VwRenderedNodePackage(
+  VwRenderedNodePackage(
     recordId: json['recordId'] as String,
     timestamp: json['timestamp'] == null
         ? null

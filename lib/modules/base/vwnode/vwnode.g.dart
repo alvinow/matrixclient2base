@@ -10,7 +10,7 @@ VwNode _$VwNodeFromJson(Map<String, dynamic> json) {
 
       try
       {
-            return VwNode(
+           VwNode(
                   recordId: json['recordId'] as String,
                   timestamp: json['timestamp'] == null
                       ? null
