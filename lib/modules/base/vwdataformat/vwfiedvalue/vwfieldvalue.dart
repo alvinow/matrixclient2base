@@ -95,6 +95,7 @@ class VwFieldValue {
 
 
 
+
   factory VwFieldValue.clone(VwFieldValue field) {
     Map<String, dynamic> oldValueDyn = field.toJson();
     String oldValueString = json.encode(oldValueDyn);

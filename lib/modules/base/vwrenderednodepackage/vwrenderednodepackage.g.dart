@@ -7,95 +7,47 @@ part of 'vwrenderednodepackage.dart';
 // **************************************************************************
 
 VwRenderedNodePackage _$VwRenderedNodePackageFromJson(
-        Map<String, dynamic> json) {
-try {
-  VwRenderedNodePackage(
-    recordId: json['recordId'] as String,
-    timestamp: json['timestamp'] == null
-        ? null
-        : VwDataFormatTimestamp.fromJson(
-        json['timestamp'] as Map<String, dynamic>),
-    rootNode: json['rootNode'] == null
-        ? null
-        : VwNode.fromJson(json['rootNode'] as Map<String, dynamic>),
-    parentArticleNode: json['parentArticleNode'] == null
-        ? null
-        : VwNode.fromJson(json['parentArticleNode'] as Map<String, dynamic>),
-    renderedNodeList: (json['renderedNodeList'] as List<dynamic>?)
-        ?.map((e) => VwNode.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    user: json['user'] == null
-        ? null
-        : VwUser.fromJson(json['user'] as Map<String, dynamic>),
-    userGroupMember: (json['userGroupMember'] as List<dynamic>?)
-        ?.map((e) => VwUserGroupMember.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  )
-    ..indexKey = json['indexKey'] as Map<String, dynamic>?
-    ..ref = json['ref'] == null
-        ? null
-        : VwLinkNode.fromJson(json['ref'] as Map<String, dynamic>)
-    ..attachments = (json['attachments'] as List<dynamic>?)
-        ?.map((e) => VwNodeContent.fromJson(e as Map<String, dynamic>))
-        .toList()
-    ..collectionName = json['collectionName'] as String?
-    ..crudMode = json['crudMode'] as String?
-    ..rowDataFormat = json['rowDataFormat'] == null
-        ? null
-        : VwRowData.fromJson(json['rowDataFormat'] as Map<String, dynamic>)
-    ..creatorUserId = json['creatorUserId'] as String?
-    ..ownerUserId = json['ownerUserId'] as String?
-    ..creatorUserLinkNode = json['creatorUserLinkNode'] == null
-        ? null
-        : VwLinkNode.fromJson(
-        json['creatorUserLinkNode'] as Map<String, dynamic>);
-}
-catch(error)
-  {
-    print("Error catched on _VwRenderedNodePackageFromJson: "+error.toString());
-  }
-
-return VwRenderedNodePackage(
-  recordId: json['recordId'] as String,
-  timestamp: json['timestamp'] == null
-      ? null
-      : VwDataFormatTimestamp.fromJson(
-      json['timestamp'] as Map<String, dynamic>),
-  rootNode: json['rootNode'] == null
-      ? null
-      : VwNode.fromJson(json['rootNode'] as Map<String, dynamic>),
-  parentArticleNode: json['parentArticleNode'] == null
-      ? null
-      : VwNode.fromJson(json['parentArticleNode'] as Map<String, dynamic>),
-  renderedNodeList: (json['renderedNodeList'] as List<dynamic>?)
-      ?.map((e) => VwNode.fromJson(e as Map<String, dynamic>))
-      .toList(),
-  user: json['user'] == null
-      ? null
-      : VwUser.fromJson(json['user'] as Map<String, dynamic>),
-  userGroupMember: (json['userGroupMember'] as List<dynamic>?)
-      ?.map((e) => VwUserGroupMember.fromJson(e as Map<String, dynamic>))
-      .toList(),
-)
-  ..indexKey = json['indexKey'] as Map<String, dynamic>?
-  ..ref = json['ref'] == null
-      ? null
-      : VwLinkNode.fromJson(json['ref'] as Map<String, dynamic>)
-  ..attachments = (json['attachments'] as List<dynamic>?)
-      ?.map((e) => VwNodeContent.fromJson(e as Map<String, dynamic>))
-      .toList()
-  ..collectionName = json['collectionName'] as String?
-  ..crudMode = json['crudMode'] as String?
-  ..rowDataFormat = json['rowDataFormat'] == null
-      ? null
-      : VwRowData.fromJson(json['rowDataFormat'] as Map<String, dynamic>)
-  ..creatorUserId = json['creatorUserId'] as String?
-  ..ownerUserId = json['ownerUserId'] as String?
-  ..creatorUserLinkNode = json['creatorUserLinkNode'] == null
-      ? null
-      : VwLinkNode.fromJson(
-      json['creatorUserLinkNode'] as Map<String, dynamic>);
-}
+        Map<String, dynamic> json) =>
+    VwRenderedNodePackage(
+      recordId: json['recordId'] as String,
+      timestamp: json['timestamp'] == null
+          ? null
+          : VwDataFormatTimestamp.fromJson(
+              json['timestamp'] as Map<String, dynamic>),
+      rootNode: json['rootNode'] == null
+          ? null
+          : VwNode.fromJson(json['rootNode'] as Map<String, dynamic>),
+      parentArticleNode: json['parentArticleNode'] == null
+          ? null
+          : VwNode.fromJson(json['parentArticleNode'] as Map<String, dynamic>),
+      renderedNodeList: (json['renderedNodeList'] as List<dynamic>?)
+          ?.map((e) => VwNode.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      user: json['user'] == null
+          ? null
+          : VwUser.fromJson(json['user'] as Map<String, dynamic>),
+      userGroupMember: (json['userGroupMember'] as List<dynamic>?)
+          ?.map((e) => VwUserGroupMember.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    )
+      ..indexKey = json['indexKey'] as Map<String, dynamic>?
+      ..ref = json['ref'] == null
+          ? null
+          : VwLinkNode.fromJson(json['ref'] as Map<String, dynamic>)
+      ..attachments = (json['attachments'] as List<dynamic>?)
+          ?.map((e) => VwNodeContent.fromJson(e as Map<String, dynamic>))
+          .toList()
+      ..collectionName = json['collectionName'] as String?
+      ..crudMode = json['crudMode'] as String?
+      ..rowDataFormat = json['rowDataFormat'] == null
+          ? null
+          : VwRowData.fromJson(json['rowDataFormat'] as Map<String, dynamic>)
+      ..creatorUserId = json['creatorUserId'] as String?
+      ..ownerUserId = json['ownerUserId'] as String?
+      ..creatorUserLinkNode = json['creatorUserLinkNode'] == null
+          ? null
+          : VwLinkNode.fromJson(
+              json['creatorUserLinkNode'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$VwRenderedNodePackageToJson(
         VwRenderedNodePackage instance) =>
