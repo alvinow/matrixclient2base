@@ -37,6 +37,7 @@ VwNode _$VwNodeFromJson(Map<String, dynamic> json) => VwNode(
       accessMode: (json['accessMode'] as num?)?.toInt() ?? 1,
       ownerUserGroupId: json['ownerUserGroupId'] as String?,
       upsyncToken: json['upsyncToken'] as String?,
+      uniqueKey: json['uniqueKey'] as String?,
       content: VwNodeContent.fromJson(json['content'] as Map<String, dynamic>),
       relativeDepth: (json['relativeDepth'] as num?)?.toInt(),
       defaultFormDefinitionIdList:
@@ -96,6 +97,7 @@ Map<String, dynamic> _$VwNodeToJson(VwNode instance) => <String, dynamic>{
       'accessMode': instance.accessMode,
       'content': instance.content,
       'upsyncToken': instance.upsyncToken,
+      'uniqueKey': instance.uniqueKey,
       'nodeAccessRendered': instance.nodeAccessRendered,
       'relativeDepth': instance.relativeDepth,
       'defaultFormDefinitionIdList': instance.defaultFormDefinitionIdList,

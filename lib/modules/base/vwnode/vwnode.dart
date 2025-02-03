@@ -19,6 +19,7 @@ class VwNode  extends VwBaseModel{
   int accessMode; //0:strict,1:parent
   VwNodeContent content;
   String? upsyncToken;
+  final String? uniqueKey;
   VwNodeAccessRendered? nodeAccessRendered;
   int? relativeDepth;
   List<String>? defaultFormDefinitionIdList;
@@ -36,6 +37,7 @@ class VwNode  extends VwBaseModel{
 
   VwNode(
       {
+
         required super.recordId,
         super.timestamp,
         super.indexKey,
@@ -54,6 +56,7 @@ class VwNode  extends VwBaseModel{
         this.accessMode=1,
         this.ownerUserGroupId,
         this.upsyncToken,
+        this.uniqueKey,
         required this.content,
         this.relativeDepth,
         this.defaultFormDefinitionIdList,
