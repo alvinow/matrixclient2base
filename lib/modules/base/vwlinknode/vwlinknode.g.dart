@@ -7,7 +7,7 @@ part of 'vwlinknode.dart';
 // **************************************************************************
 
 VwLinkNode _$VwLinkNodeFromJson(Map<String, dynamic> json) => VwLinkNode(
-      nodeId: json['nodeId'] as String?,
+      nodeId: json['nodeId'] as String,
       nodeType: json['nodeType'] as String,
       contentContext: json['contentContext'] == null
           ? null
