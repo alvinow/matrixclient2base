@@ -53,14 +53,31 @@ class VwLinkFileNodeAdapter extends TypeAdapter<VwLinkFileNode> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-VwLinkFileNode _$VwLinkFileNodeFromJson(Map<String, dynamic> json) =>
-    VwLinkFileNode(
+VwLinkFileNode _$VwLinkFileNodeFromJson(Map<String, dynamic> json) {
+  try
+      {
+    return  VwLinkFileNode(
       linkFileNodeId: json['linkFileNodeId'] as String,
       originalFileName: json['originalFileName'] as String,
       md5: json['md5'] as String,
       temporaryLink:
-          VwLinkFileUrl.fromJson(json['temporaryLink'] as Map<String, dynamic>),
+      VwLinkFileUrl.fromJson(json['temporaryLink'] as Map<String, dynamic>),
     );
+      }
+      catch(error)
+  {
+    print("Error catched on VwLinkFileNodeFromJson(Map<String, dynamic> json) "+error.toString());
+  }
+
+  return  VwLinkFileNode(
+    linkFileNodeId: json['linkFileNodeId'] as String,
+    originalFileName: json['originalFileName'] as String,
+    md5: json['md5'] as String,
+    temporaryLink:
+    VwLinkFileUrl.fromJson(json['temporaryLink'] as Map<String, dynamic>),
+  );
+}
+
 
 Map<String, dynamic> _$VwLinkFileNodeToJson(VwLinkFileNode instance) =>
     <String, dynamic>{
