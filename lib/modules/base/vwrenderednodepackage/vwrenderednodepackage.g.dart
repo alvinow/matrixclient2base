@@ -51,7 +51,7 @@ VwRenderedNodePackage _$VwRenderedNodePackageFromJson(
       }
       catch(error)
   {
-    print(error.toString());
+    print("Error catched on VwRenderedNodePackage VwRenderedNodePackageFromJson"+error.toString());
   }
   return  VwRenderedNodePackage(
     recordId: json['recordId'] as String,
