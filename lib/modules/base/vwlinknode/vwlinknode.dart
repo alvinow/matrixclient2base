@@ -7,7 +7,7 @@ part 'vwlinknode.g.dart';
 @JsonSerializable()
 class VwLinkNode {
   VwLinkNode(
-      {required this.nodeId,
+      { this.nodeId,
       required this.nodeType,
        this.contentContext,
       this.cache,
@@ -17,7 +17,7 @@ class VwLinkNode {
         this.childrenNodeRendered
       });
 
-  final String nodeId;
+  final String? nodeId;
   final String nodeType;
   VwContentContext? contentContext;
   VwLinkNodeRendered? cache;
