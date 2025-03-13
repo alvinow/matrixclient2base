@@ -61,7 +61,7 @@ VwRowData _$VwRowDataFromJson(Map<String, dynamic> json) {
                           .toList(),
                       indexFieldProperties:
                       json['indexFieldProperties'] as Map<String, dynamic>?,
-                )
+                );
 
 
 
