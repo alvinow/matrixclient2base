@@ -14,17 +14,9 @@ VwNodeContent _$VwNodeContentFromJson(Map<String, dynamic> json) {
                       : VwClassEncodedJson.fromJson(
                       json['classEncodedJson'] as Map<String, dynamic>),
                   linkFileStorageId: json['linkFileStorageId'] as String?,
-                  linkbasemodel: json['linkbasemodel'] == null
-                      ? null
-                      : VwLinkBaseModel.fromJson(
-                      json['linkbasemodel'] as Map<String, dynamic>),
                   linkNode: json['linkNode'] == null
                       ? null
                       : VwLinkNode.fromJson(json['linkNode'] as Map<String, dynamic>),
-                  linkRowCollection: json['linkRowCollection'] == null
-                      ? null
-                      : VwLinkRowCollection.fromJson(
-                      json['linkRowCollection'] as Map<String, dynamic>),
                   renderedDate: json['renderedDate'] == null
                       ? null
                       : DateTime.parse(json['renderedDate'] as String),
@@ -51,17 +43,11 @@ VwNodeContent _$VwNodeContentFromJson(Map<String, dynamic> json) {
                 : VwClassEncodedJson.fromJson(
                 json['classEncodedJson'] as Map<String, dynamic>),
             linkFileStorageId: json['linkFileStorageId'] as String?,
-            linkbasemodel: json['linkbasemodel'] == null
-                ? null
-                : VwLinkBaseModel.fromJson(
-                json['linkbasemodel'] as Map<String, dynamic>),
+
             linkNode: json['linkNode'] == null
                 ? null
                 : VwLinkNode.fromJson(json['linkNode'] as Map<String, dynamic>),
-            linkRowCollection: json['linkRowCollection'] == null
-                ? null
-                : VwLinkRowCollection.fromJson(
-                json['linkRowCollection'] as Map<String, dynamic>),
+
             renderedDate: json['renderedDate'] == null
                 ? null
                 : DateTime.parse(json['renderedDate'] as String),
@@ -86,8 +72,6 @@ Map<String, dynamic> _$VwNodeContentToJson(VwNodeContent instance) =>
       'linkFileStorageId': instance.linkFileStorageId,
       'fileStorage': instance.fileStorage,
       'linkNode': instance.linkNode,
-      'linkbasemodel': instance.linkbasemodel,
-      'linkRowCollection': instance.linkRowCollection,
       'renderedDate': instance.renderedDate?.toIso8601String(),
       'contentContext': instance.contentContext,
       'rowData': instance.rowData,

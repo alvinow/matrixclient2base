@@ -13,9 +13,7 @@ class VwNodeContent {
   VwNodeContent({
     this.classEncodedJson,
     this.linkFileStorageId,
-    this.linkbasemodel,
     this.linkNode,
-    this.linkRowCollection,
     this.renderedDate,
     this.contentContext,
     this.rowData,
@@ -27,8 +25,6 @@ class VwNodeContent {
   String? linkFileStorageId;
   VwFileStorage? fileStorage;
   VwLinkNode? linkNode;
-  VwLinkBaseModel? linkbasemodel;
-  VwLinkRowCollection? linkRowCollection;
   DateTime? renderedDate;
   VwContentContext? contentContext;
   VwRowData? rowData;

@@ -71,8 +71,10 @@ class VwClassEncodedJsonAdapter extends TypeAdapter<VwClassEncodedJson> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-VwClassEncodedJson _$VwClassEncodedJsonFromJson(Map<String, dynamic> json) =>
-    VwClassEncodedJson(
+VwClassEncodedJson _$VwClassEncodedJsonFromJson(Map<String, dynamic> json) {
+  try
+      {
+    return VwClassEncodedJson(
       instanceId: json['instanceId'] as String,
       data: json['data'] as Map<String, dynamic>?,
       className: json['className'] as String,
@@ -95,6 +97,36 @@ VwClassEncodedJson _$VwClassEncodedJsonFromJson(Map<String, dynamic> json) =>
           .toList(),
       syncUseRowDataFormat: json['syncUseRowDataFormat'] as bool? ?? false,
     );
+      }
+      catch(error)
+  {
+    print("Error catched on VwClassEncodedJsonFromJson(Map<String, dynamic> json): "+error.toString());
+  }
+  return VwClassEncodedJson(
+    instanceId: json['instanceId'] as String,
+    data: json['data'] as Map<String, dynamic>?,
+    className: json['className'] as String,
+    isCompressed: json['isCompressed'] as bool? ?? false,
+    dataCompressedBase64: json['dataCompressedBase64'] as String?,
+    compressionType: json['compressionType'] as String?,
+    collectionName: json['collectionName'] as String?,
+    createdOnClient: json['createdOnClient'] == null
+        ? null
+        : DateTime.parse(json['createdOnClient'] as String),
+    syncedToServer: json['syncedToServer'] == null
+        ? null
+        : DateTime.parse(json['syncedToServer'] as String),
+    pushToServerStatus: (json['pushToServerStatus'] as num?)?.toInt(),
+    uploadFileStorageList: (json['uploadFileStorageList'] as List<dynamic>?)
+        ?.map((e) => VwFileStorage.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    uploadNodeResponse: (json['uploadNodeResponse'] as List<dynamic>?)
+        ?.map((e) => VwNode.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    syncUseRowDataFormat: json['syncUseRowDataFormat'] as bool? ?? false,
+  );
+}
+
 
 Map<String, dynamic> _$VwClassEncodedJsonToJson(VwClassEncodedJson instance) =>
     <String, dynamic>{
