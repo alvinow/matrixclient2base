@@ -16,13 +16,11 @@ class VwRenderedNodePackage extends VwBaseModel {
       {required super.recordId,
       required super.timestamp,
       this.rootNode,
-        this.parentArticleNode,
       this.renderedNodeList,
       this.user,
       this.userGroupMember});
 
   final VwNode? rootNode;
-  final VwNode? parentArticleNode;
   List<VwNode>? renderedNodeList;
   final VwUser? user;
   List<VwUserGroupMember>? userGroupMember;
