@@ -45,6 +45,7 @@ class VwFieldDisplayFormat {
   static const String vsfNumeric = "vsfNumeric";
   static const String vsfAccounting = "vsfAccounting";
   static const String vsfCurrency = "vsfCurrency";
+  static const String vsfCurrencyText = "vsfCurrencyText";
   static const String vsfDateTime = "vsfDateTime";
   static const String vsfShortDateTime = "vsfShortDateTime";
   static const String vsfDateOnly = "vsfDateOnly";
