@@ -85,6 +85,7 @@ class VwNode  extends VwBaseModel{
   static const String ntnRowData = "ntnRowData";
   static const String ntnFormDefinition = "ntnFormDefinition";
   static const String ntnTopNodeInsert = "ntnTopNodeInsert";
+  static const String ntnFormResponse = "ntnFormResponse";
 
 
 
