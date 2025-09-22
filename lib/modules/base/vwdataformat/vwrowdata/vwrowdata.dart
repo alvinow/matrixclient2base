@@ -29,6 +29,7 @@ class VwRowData extends VwBaseModel {
       this.rowDefinitionId,
       this.responseInfo,
       this.syncFormResponseList,
+        this.childFormResponseList,
         this.parentNodeId,
       this.renderedFormResponseList,
       this.indexFieldProperties
@@ -47,6 +48,7 @@ class VwRowData extends VwBaseModel {
   VwNodeResponse? responseInfo;
   List<VwRowData>? syncFormResponseList;
   List<VwRowData>? renderedFormResponseList;
+  List<VwRowData>? childFormResponseList;
   String? parentNodeId;
   Map<String,dynamic>? indexFieldProperties;
 
